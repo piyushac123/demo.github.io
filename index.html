@@ -24,15 +24,26 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a style="color: #008080; background-color: grey;" href="#">Home</a></li>
-        <li><a style="color: #008080; " href="#">Rulebook</a></li>
-        <li><a style="color: #008080;" href="#">Leaderboard</a></li>
-        <li><a style="color: #008080;" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li class="dropdown"><a  style="color: #008080;" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-log-in "></span>
-      Login</a> <ul class="dropdown-menu">
-          <li><a style="color: #008080;" href="#">Politics</a></li>
-          <li><a style="color: #008080;" href="#">Sports</a></li>
-          <li><a style="color: #008080;" href="#">Bollywood</a></li>
+        <li class="active li1"><a style="color: #00c0c0; background-color: grey;" href="#">Home</a></li>
+        <li class="li1"><a style="color: #00c0c0;" href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user">
+            </span> 
+            Sign Up
+            </a>
+        <ul class="dropdown-menu">
+          <li class="li1"><a style="color: #00c0c0;" href="#">Politics</a></li>
+          <li class="li1"><a style="color: #00c0c0;" href="#">Sports</a></li>
+          <li class="li1"><a style="color: #00c0c0;" href="#">Bollywood</a></li>
+        </ul>
+          </li>
+        <li class="dropdown" class="li1">
+            <a  style="color:#00c0c0;" class="dropdown-toggle" data-toggle="dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="glyphicon glyphicon-log-in "></span>
+                Login
+            </a> 
+        <ul class="dropdown-menu">
+          <li class="li1"><a style="color: #00c0c0;" href="#">Politics</a></li>
+          <li class="li1"><a style="color: #00c0c0;" href="#">Sports</a></li>
+          <li class="li1"><a style="color: #00c0c0;" href="#">Bollywood</a></li>
         </ul></li>
       </ul>
     </div>
@@ -42,23 +53,44 @@
   <h1 style="font-family: 'Timmana', sans-serif;font-size: 90px;" >QUIZ999</h1>
  </div>
  <div class="row">    
-    <div class="col-sm-4 col-xs-6 text-center">
-       <button type="button" class="btn btn-default">
-      <a href="#"><h4>POLITICS</h4></a>
-       </button>
+    <div class="col-sm-4 col-xs-6">
     </div>
     <div class="col-sm-4 col-xs-6 text-center">
-      <button type="button" class="btn btn-default">
-      <a href="#"><h4>SPORTS</h4></a>
-    </button>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" type="button"  class="btn btn-default" >
+            <h4>RULEBOOK</h4>
+        </button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>INSTRUCTIONS</h2>
     </div>
-    <div class="col-sm-4 col-xs-12 text-center">
-      <button type="button" class="btn btn-default">       
-      <a href="#"><h4>BOLLYWOOD</h4></a>
-    </button>
+    <div class="modal-body">
+      <ul class="txt"> 
+          <li><h4>At a time can choose anyone Quiz only.</h4></li>
+          <li><h4>Each Quiz contains 6 Questions.</h4></li>
+          <li><h4>For each Question 5 minutes are alloted.</h4></li>
+          <li><h4>Quiz will be submitted automatically if you failed to submit Quiz.</h4></li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+        <p>-------------------&times;&times;&times;-------------------</p>
     </div>
   </div>
+
+   </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+    </div>
+  </div>
+    </div>
   <script src="js/p5.min.js"></script>
   <script  src="js/index.js"></script>
 </body>
 </html>
+
